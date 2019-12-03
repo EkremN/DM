@@ -1,0 +1,248 @@
+/* //FONTS */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,700,800,900&display=swap');
+
+*{
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  li{
+    list-style: none;
+  }
+  
+  ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  a{
+    text-decoration: none;
+    -moz-text-decoration:none;
+    color: inherit;
+  }
+
+  :root {
+    --side-nav: #1b252d;
+    --tool-bar: #2a3644;
+    --main: #fcfcfd;
+    --primary:#2bd9c1;
+    --secondary:#6767e7;
+    --bright-color:#d3d6db;
+    --light-color:#95979B;
+    --main-font-color:#324044;
+  }
+
+  /* #2bd9c1; */
+
+  html,body{
+    margin: 0;
+    color: var(--main-font-color);
+    position: relative;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: #f4f4fb;
+    scroll-behavior: smooth;
+  }
+
+   /* ///////////////////////HEADER */
+  .page-header{
+    background: #fff;
+    height: 80px;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -2px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    height: 50px;
+    left: 80px;
+  }
+
+
+  /* ///////////////////////BUTTON */
+
+  .primary-btn{
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 10px 50px;
+    box-shadow: 0px 13px 17px 0px rgba(224, 224, 224, 1);
+    background: var(--primary);
+    border:none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .primary-btn i{
+    font-size: 25px;
+    margin-left: 10px;
+  }
+
+  .primary-btn:hover{
+    background: var(--secondary);
+  }
+
+  .primary-btn:disabled,
+  .primary-btn[disabled]{
+    background: var(--primary);
+    opacity: .5;
+    cursor:not-allowed;
+}
+
+/* ///////////////////////INPUT */
+
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px; 
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color:#95979B;
+}
+
+input {
+  padding: 15px 10px;
+  width: 100%;
+  border: none;
+  border: 1px solid;
+  margin-bottom: 25px;
+  background-color: #fff;
+  border-color: #dbdbdb;
+  border-radius: 4px;
+  color: #363636;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+-webkit-appearance: none; 
+}
+
+.cvs-input{
+  padding: 17px 20px;
+}
+
+input:focus {
+  border: 1px solid var(--primary);
+}
+
+/* /////////////////////////////////INPUT: CHECKBOX */
+
+.cbx {
+  display: flex;
+  -webkit-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.cbx:not(:last-child) {
+  margin-right: 6px;
+}
+.cbx:hover {
+  background: rgba(125,100,247,0.06);
+}
+.cbx span {
+  margin-top: 4px;
+  float: left;
+  vertical-align: middle;
+  transform: translate3d(0, 0, 0);
+
+}
+.cbx span:first-child {
+  margin-top:3px; 
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+  transform: scale(1);
+  border: 2px solid #c8ccd4;
+  transition: all 0.2s ease;
+}
+
+
+.cbx span:first-child svg {
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-dasharray: 16px;
+  stroke-dashoffset: 16px;
+  transition: all 0.3s ease;
+  transition-delay: 0.1s;
+  transform: translate3d(0, 0, 0);
+}
+.cbx span:last-child {
+  padding-left: 25px;
+  line-height: 18px;
+}
+.cbx:hover span:first-child {
+  border-color: var(--secondary);
+}
+.inp-cbx:checked + .cbx span:first-child {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  animation: wave 0.4s ease;
+}
+.inp-cbx:checked + .cbx span:first-child svg {
+  stroke-dashoffset: 0;
+}
+
+.inline-svg {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+@-moz-keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+@-webkit-keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+@-o-keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+@keyframes wave {
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #90A4AE;
+}
+
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #FF822E;
+  background: var(--primary);
+
+}

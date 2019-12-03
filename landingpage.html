@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/landingpage.css">
+    <link rel="stylesheet" href="css/anime.css">
+    <title>Akademija Digitalnog Marketinga</title>
+    <meta property="og:title" content="Digitalni Marketing | Digitala">
+    <meta property="og:image:alt" content="Digitalni Marketing">
+    <meta property="og:type" content="website">
+    <meta name="description" property="description"
+        content="Steknite iskustvo iz stvarnog svijeta vođenjem marketing kampanja dok učite od najboljih eksperate u toj oblsti. Lansirajte vašu karijeru sa 360 stepeni razumjevanja digitalnog marketinga.">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:description"
+        content="Steknite iskustvo iz stvarnog svijeta vođenjem marketing kampanja dok učite od najboljih eksperate u toj oblsti. Lansirajte vašu karijeru sa 360 stepeni razumjevanja digitalnog marketinga.">
+    <!-- <meta property="og:image" content="https://images.ctfassets.net/2y9b3o528xhq/2Fjm500mEYSlqhRR3j6aw8/486d009d28708a313727fb849493f4d7/nd018_open_graph.jpg"><meta property="og:url" content="https://www.udacity.com/course/digital-marketing-nanodegree--nd018"> -->
+    <!--  <meta property="og:title" content="<%= meta_title %>" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<%= request.original_url %>" />
+    <meta property="og:image" content="<%= meta_image %>" />
+    <meta property="og:description" content="<%= meta_description %>" />
+    <meta property="og:site_name" content="<%= meta_title %>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+</head>
+
+<body>
+    <header class="page-header">
+        <img class="logo" src="media/logo.svg" alt="">
+        <ul class="header-nav">
+            <li><a href="#syllabus">Nastavni plan</a></li>
+            <li><a href="#program">O programu</a></li>
+            <li><a href="#professors">Instruktori</a></li>
+            <li><a href="#price">Cijena</a></li>
+            <li><a><button class="show-to-pay primary-btn">Prijavite se</button></a></li>
+        </ul>
+        <div class="hamburger-menu">
+            <input id="hamburger-checkbox" class="slide" type="checkbox" name="yes">
+            <div class="spans" for="yes">
+                <div class="span"></div>
+                <div class="span"></div>
+                <div class="span"></div>
+            </div>
+            <div class="side">
+                <nav class="hamburger-nav">
+                    <ul>
+                        <a href="#syllabus">
+                            <li> Nastavni plan</li>
+                        </a>
+                        <a href="#program">
+                            <li>O programu</li>
+                        </a>
+                        <a href="#professors">
+                            <li> Instruktori</li>
+                        </a>
+                        <a href="#price">
+                            <li> Cijena</li>
+                        </a>
+                        <li><a> <button class="show-to-pay primary-btn">Prijavite se</button></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <section class="count-down-section">
+        <video autoplay muted loop class="video-bg">
+            <source src="media/sample.mp4" type="video/mp4">
+        </video>
+        <div class="content">
+            <h5>Nanodegree program</h5>
+            <h1>Postani Digitalni Marketar</h1>
+            <p> Steknite iskustvo iz stvarnog svijeta vođenjem marketing kampanja dok učite od najboljih eksperate u toj
+                oblsti.<br>
+                Lansirajte vašu karijeru sa 360 stepeni razumjevanja digitalnog marketinga.</p>
+            <div class="buttons-holder">
+                    <form method="get" action="media/silabus.pdf" target="_blank">
+                            <button type="submit" >Preuzmite nastavni plan</button>
+                         </form>
+                <!-- <button>Preuzmite nastavni plan</button> -->
+                <button class="show-to-pay">Prijavite se</button>
+            </div>
+            <div class="caunter-holder">
+                <ul id="clockdiv">
+                    <li>
+                        <span class="days"></span>
+                        <span>Dana</span>
+                    </li>
+                    <li>
+                        <span class="hours"></span>
+                        <span>Sati</span>
+                    </li>
+                    <li>
+                        <span class="minutes"></span>
+                        <span>Minuta</span>
+                    </li>
+                    <li>
+                        <span class="seconds"></span>
+                        <span>Sekundi</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- //MOre html from here -->
+
+            <!-- //BUTTON FOR VIDEO -->
+            <!-- <div class="play-button" id="play-button">
+                <i class="fas fa-play"></i>
+            </div> -->
+            <div class="mouse-scroll">
+            </div>
+            <div id="popup-video-holder" class="popup-video-holder">
+                <div class="video-holder">
+                    <div class="play-button close-btn" id="close-btn">
+                        X
+                    </div>
+                    <video src="media/kek.mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="course-information-table">
+        <div>
+            <div class="information-holder">
+                <h6 class="special-h6">PREDVIĐENO VRIJEME</h6>
+                <h5 class="special-h5">3 Mjeseca</h5>
+                <p class="special-p"> 10 sati/nedeljno</p>
+            </div>
+        </div>
+        <div>
+            <div class="information-holder">
+                <h6 class="special-h6">PRIJAVITE SE DO</h6>
+                <h5 class="special-h5">Februar 17, 2019</h5>
+                <p class="special-p">Prijavom dobijate pristup lekcijama i nastavnom materijalu</p>
+            </div>
+        </div>
+        <div>
+            <div class="information-holder">
+                <h6 class="special-h6">PREDUVJETI</h6>
+                <h5 class="special-h5">Nije potrebno iskustvo</h5>
+                <p class="special-p"> Odvojiti 10 sati nedeljno</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="funtenjer">
+        <section id="syllabus" class=" what-you-will-learn">
+            <h4 class="section-title">Šta ćete naučiti</h4>
+
+            <div class="container">
+                <div class="syllabus-header-grid">
+                    <div>
+                        <h6 class="flag">Nastavni plan</h6>
+                        <h2>Postani digitalni marketar</h2>
+                        <p> Naučite stvarati marketinški sadržaj, koristiti društvene medije da biste istakli svoju
+                            poruku, učinite vaš kontent vidljivim u pretraživanju, oglašavajte se na Facebooku i Googlu.
+                            Uz to, naučite kako funkcioniraju displey i video oglasi, kako vršiti marketing putem emaila
+                            i sve spomjenuto mjeriti i optimizirati pomoću usluge Google Analitike.
+                        </p>
+                        <footer>
+                            <div class="details" id="hide-details"><span></span> SAKRI DETALJE</div>
+                            <div><span>3 mjeseca do završetka</span></div>
+                        </footer>
+                    </div>
+                    <div></div>
+                </div>
+                <div id="syllabus-body-grid" class="syllabus-body-grid">
+                    <div class="left">
+                        <div class="header-left">
+                            <h6 class="special-h6">PREDUVJETNO ZNANJE</h6>
+                            <p> Polaznici trebaju imati osnovne kompjuterske vještine.</p>
+                        </div>
+                        <main>
+                            <div class="card-holder">
+                                <div class="card">
+                                    <h4>Osnove marketinga</h4>
+                                    <p>Cilj ovog predmeta jeste da obradi osnovne elemente i koncepte marketinga kako
+                                        biste lakše mogli stupiti u svijet digitalnog marketinga. U njemu ćete također
+                                        imati priliku da upoznate tri kompanije koje su praktični primjer B2C i B2B
+                                        konteksta i kroz njihove primjere vidjećete šta su to dobre marketinške prakse.
+                                    </p>
+                                    <footer>
+                                        <div class="click-on-project">
+                                            <img src="media/digitala-icon-project.svg">
+                                            <span>Prvi Projekat: Priprema za marketing</span>
+                                        </div>
+                                        <div class="popup-project-holder popup-video-holder">
+                                            <div class="popup-project">
+                                                <span class="project-close-btn">X</span>
+                                                <h6 class="special-h6">Prvi Projekat</h6>
+                                                <h3>Priprema za marketing</h3>
+                                                <p>U ovom projektu pripremite se za vašu novu ulogu digitalnog
+                                                    marketara. Imate izbor da promovišete vašu vlastitu kompaniju ili da
+                                                    testirate B2C ili B2B proizvod koji ćemo vam mi obezbjediti.
+                                                    Marketing B2C ili B2B proizvoda, rezimiranje poslovnog modela
+                                                    kompanije, postavljanje ciljeva marketinga, i kreiranje persone
+                                                    kupca za vaš proizvod su neke od stvari koje ćete uraditi.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="find-out-more">Detaljnije</span>
+                                        <div class="popup-video-holder popup-find-out-more-holder">
+                                            <div class="popup-find-out-more">
+                                                <div class="header">
+                                                    <div class="popup-find-out-more-close-btn">X</div>
+                                                    <!--Content before waves-->
+                                                    <div class="inner-header flex">
+                                                        <h1>Dio 01 - Modul 01 – Osnove digitalnog marketinga</h1>
+                                                    </div>
+                                                    <!--Waves Container-->
+                                                    <div>
+                                                        <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 24 150 28" preserveAspectRatio="none"
+                                                            shape-rendering="auto">
+                                                            <defs>
+                                                                <path id="gentle-wave"
+                                                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                                            </defs>
+                                                            <g class="parallax">
+                                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                                    fill="rgba(255,255,255,0.7" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                                    fill="rgba(255,255,255,0.5)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                                    fill="rgba(255,255,255,0.3)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                                    fill="#fff" />
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <!--Waves end-->
+                                                </div>
+                                                <!--Header ends-->
+                                                <!--Content starts-->
+                                                <div class="content">
+                                                    <ul>
+                                                        <li> Lekcija 01: Dobrodošli u Digitala program digitalnog marketinga</li>
+                                                        <ul>
+                                                            <li>Pregled Nanodegree programa</li>
+                                                            <li>Upoznajte svoje instruktore</li>
+                                                            <li>Uvod u Slack</li>
+                                                            <li>Kako koristiti Slack</li>
+                                                        </ul>
+                                                        <br>
+                                                        <li> Lekcija 02: Osnove digitalnog marketinga</li>
+                                                        <br>
+                                                        <li> Lekcija 03: Šta? Definišite svoje poslovanje</li>
+                                                        <ul>
+                                                          <li>Uvod</li>
+                                                          <li>Šta je marketing plan</li>
+                                                          <li>Počnite sa jasnom vrjednošću koje vaše poslovanje nudi</li>
+                                                          <li>Biznis modeli</li>
+                                                          <li>Životni ciklus poslovanja </li>
+                                                          <li>Rezime</li>
+                                                        </ul>
+                                                        <br>
+                                                        <li>Lekcija 04 Ko i kada? Definišite svoje kupce</li>
+                                                          <ul>
+                                                            <li>Uvod</li>
+                                                            <li>Planirajte svoju publiku</li>
+                                                            <li>Kreirajte mape ematije</li>
+                                                            <li>Targetirajte svoju personu</li>
+                                                            <li>Kupovno putovanje vašeg kupca</li>
+                                                            <li>Rezime</li>
+                                                          </ul>
+                                                          <br>
+                                                        <li> Lekcija 05 Gdje? Kanali digitalnog marketinga</li>
+                                                          <ul>
+                                                            <li>Uvod</li>
+                                                            <li>Mapa digitalnog marketinga</li>
+                                                            <li>Plaćeni, posjedovani i zadobijeni kanali promocije</li>
+                                                            <li>Test ;(</li>
+                                                            <li>Rezime</li>
+                                                          </ul>
+                                                          <br>
+                                                        <li>Lekcija 06 Zašto? Marketing ciljevi i KPI (ključni indikatori performansi) </li>
+                                                          <ul>
+                                                            <li>Uvod</li>
+                                                            <li>Ciljevi digitalnog marketinga</li>
+                                                            <li>KPI</li>
+                                                            <li>Metrika I KPI</li>
+                                                            <li>Test</li>
+                                                            <li>Rezime</li>
+                                                          </ul>
+                                                          <br>
+                                                        <li>Lekcija 07 Završni projekat </li>
+                                                    </ul>
+                                                </div>
+                                                <!--Content ends-->
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="card-holder">
+                                <div class="card">
+                                    <h4>Strategija sadržaja</h4>
+                                    <p>U ovom predmetu naučite kako planirati i razviti sadržaj koji će angažovati vašu
+                                        ciljanu publiku da uradi željenu akciju. </p>
+                                </div>
+                                <footer>
+                                        <span class="find-out-more">Detaljnije</span>
+                                        <div class="popup-video-holder popup-find-out-more-holder">
+                                            <div class="popup-find-out-more">
+                                                <div class="header">
+                                                    <div class="popup-find-out-more-close-btn">X</div>
+                                                    <!--Content before waves-->
+                                                    <div class="inner-header flex">
+                                                        <h1>Web marketing i WordPress</h1>
+                                                    </div>
+                                                    <!--Waves Container-->
+                                                    <div>
+                                                        <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 24 150 28" preserveAspectRatio="none"
+                                                            shape-rendering="auto">
+                                                            <defs>
+                                                                <path id="gentle-wave"
+                                                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                                            </defs>
+                                                            <g class="parallax">
+                                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                                    fill="rgba(255,255,255,0.7" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                                    fill="rgba(255,255,255,0.5)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                                    fill="rgba(255,255,255,0.3)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                                    fill="#fff" />
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <!--Waves end-->
+                                                </div>
+                                                <!--Header ends-->
+                                                <!--Content starts-->
+                                                <div class="content">
+                                                </div>
+                                                <!--Content ends-->
+                                            </div>
+                                        </div>
+                                </footer>
+                            </div>
+                            <div class="card-holder">
+                                <div class="card">
+                                    <h4>Društvene mreže</h4>
+                                    <p>Socijalni mediji su bitan kanal za marketare. U ovom predmetu, naučite više o
+                                        glavnim platformama društvenih mreža, kako rukovoditi s vašim poslovanjem na
+                                        njima, te kako kreirati efektivan sadržaj za svaku platformu (Facebook,
+                                        Instagram itd).</p>
+                                    <footer>
+                                        <div class="click-on-project">
+                                            <img src="media/digitala-icon-project.svg">
+                                            <span>Drugi Projekat: Marketing vašeg sadržaja</span>
+                                        </div>
+                                        <div class="popup-project-holder popup-video-holder">
+                                            <div class="popup-project">
+                                                <span class="project-close-btn">X</span>
+                                                <h6 class="special-h6">Drugi Projekat</h6>
+                                                <h3>Marketing vašeg sadržaja</h3>
+                                                <p>U ovom projektu tražimo od vas da vježbate kreiranje i promociju
+                                                    sadržaja o vašem poslovanju. Prvo što trebate uraditi jeste kreirati
+                                                    blog. Poslije toga tri objave na tri različite društvene mreže na
+                                                    kojima ćete podijeliti vaš blog.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="find-out-more">Detaljnije</span>
+                                        <div class="popup-video-holder popup-find-out-more-holder">
+                                            <div class="popup-find-out-more">
+                                                <div class="header">
+                                                    <div class="popup-find-out-more-close-btn">X</div>
+                                                    <!--Content before waves-->
+                                                    <div class="inner-header flex">
+                                                        <h1>Web marketing i WordPress</h1>
+                                                    </div>
+                                                    <!--Waves Container-->
+                                                    <div>
+                                                        <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 24 150 28" preserveAspectRatio="none"
+                                                            shape-rendering="auto">
+                                                            <defs>
+                                                                <path id="gentle-wave"
+                                                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                                            </defs>
+                                                            <g class="parallax">
+                                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                                    fill="rgba(255,255,255,0.7" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                                    fill="rgba(255,255,255,0.5)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                                    fill="rgba(255,255,255,0.3)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                                    fill="#fff" />
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <!--Waves end-->
+                                                </div>
+                                                <!--Header ends-->
+                                                <!--Content starts-->
+                                                <div class="content">
+                                                </div>
+                                                <!--Content ends-->
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="card-holder">
+                                <div class="card">
+                                    <h4>Facebook i Instagram Marketing</h4>
+                                    <p>Kreirajte Facebook strancu svoje firme i uz Facebook i Instagram oglasavanje
+                                        dođite do ciljane skupine ljudi kojima čete prezentirati svoj brend, proizvod
+                                        ili uslugu.</p>
+                                    <footer>
+                                        <div class="click-on-project">
+                                            <img src="media/digitala-icon-project.svg">
+                                            <span>Treći projekat: Facebook kampanja</span>
+                                        </div>
+                                        <div class="popup-project-holder popup-video-holder">
+                                            <div class="popup-project">
+                                                <span class="project-close-btn">X</span>
+                                                <h6 class="special-h6">Treći projekat</h6>
+                                                <h3>Facebook kampanja</h3>
+                                                <p>Kreirajte i upravljajte oglasnom kampanjom na facebooku i Instagramu
+                                                    za proizvod vaše vlastite firme, ako ste već u poduzetničkim vodama,
+                                                    firma u kojoj radite, firma u kojoj se želite zaposliti, čak i
+                                                    izmišljene firme ili vaše poduzetničke ideje o kojoj maštate!
+                                                    Testirajte i optimizirajte vašu kampanju dok još traje na facebooku
+                                                    kako bi dobili što viši ROI.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="find-out-more">Detaljnije</span>
+                                        <div class="popup-video-holder popup-find-out-more-holder">
+                                            <div class="popup-find-out-more">
+                                                <div class="header">
+                                                    <div class="popup-find-out-more-close-btn">X</div>
+                                                    <!--Content before waves-->
+                                                    <div class="inner-header flex">
+                                                        <h1>Web marketing i WordPress</h1>
+                                                    </div>
+                                                    <!--Waves Container-->
+                                                    <div>
+                                                        <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 24 150 28" preserveAspectRatio="none"
+                                                            shape-rendering="auto">
+                                                            <defs>
+                                                                <path id="gentle-wave"
+                                                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                                            </defs>
+                                                            <g class="parallax">
+                                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                                    fill="rgba(255,255,255,0.7" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                                    fill="rgba(255,255,255,0.5)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                                    fill="rgba(255,255,255,0.3)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                                    fill="#fff" />
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <!--Waves end-->
+                                                </div>
+                                                <!--Header ends-->
+                                                <!--Content starts-->
+                                                <div class="content">
+                                                </div>
+                                                <!--Content ends-->
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="card-holder">
+                                <div class="card">
+                                    <h4>Optimizacija pretraživača (SEO)</h4>
+                                    <p>Internet pretraživači su bitan dio online svijeta. Naučite kako optimizirati vašu
+                                        prisutnost na pretraživačima kroz on-site i off-site aktivnosti, izgradite listu
+                                        ciljanih ključnih riječi, usavršite korisničko iskustvo i dizajn na vašoj web
+                                        stranici, te sprovedite kampanju strategijom linkovanja.</p>
+                                    <footer>
+                                        <div class="click-on-project">
+                                            <img src="media/digitala-icon-project.svg">
+                                            <span>Četvrti projekat: Izvršite SEO pregled</span>
+                                        </div>
+                                        <div class="popup-project-holder popup-video-holder">
+                                            <div class="popup-project">
+                                                <span class="project-close-btn">X</span>
+                                                <h6 class="special-h6">Četvrti projekat</h6>
+                                                <h3>Izvršite SEO pregled</h3>
+                                                <p>U ovom projektu, izvršite pregled web-stranice vaše kompanije i
+                                                    predložite načine na koji možete poboljšati poziciju stranice u
+                                                    pregledima internet pretraživača. Predložite ciljane ključne riječi
+                                                    i procijenite dizajn UX stranice i načine na koje se stranica može
+                                                    poboljšati.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="find-out-more">Detaljnije</span>
+                                        <div class="popup-video-holder popup-find-out-more-holder">
+                                            <div class="popup-find-out-more">
+                                                <div class="header">
+                                                    <div class="popup-find-out-more-close-btn">X</div>
+                                                    <!--Content before waves-->
+                                                    <div class="inner-header flex">
+                                                        <h1>Web marketing i WordPress</h1>
+                                                    </div>
+                                                    <!--Waves Container-->
+                                                    <div>
+                                                        <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 24 150 28" preserveAspectRatio="none"
+                                                            shape-rendering="auto">
+                                                            <defs>
+                                                                <path id="gentle-wave"
+                                                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                                            </defs>
+                                                            <g class="parallax">
+                                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                                    fill="rgba(255,255,255,0.7" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                                    fill="rgba(255,255,255,0.5)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                                    fill="rgba(255,255,255,0.3)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                                    fill="#fff" />
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <!--Waves end-->
+                                                </div>
+                                                <!--Header ends-->
+                                                <!--Content starts-->
+                                                <div class="content">
+                                                </div>
+                                                <!--Content ends-->
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="card-holder">
+                                <div class="card">
+                                    <h4>Google Oglašavanje (SEM)</h4>
+                                    <p>Poboljšanje vidljivosti u rezultatima pretraživača je osnovni dio digitalnog
+                                        marketinga. Olakšajte kupcima da vas nađu online sa Pretraživačkim Marketingom
+                                        (SEM), koji je efikasna taktika za ostvarenje marketinških ciljeva. U ovom
+                                        predmetu, naučite kako kreirati, provesti, i optimizirati efikasnu kampanju
+                                        koristeći Google Ads.</p>
+                                    <footer>
+                                        <div class="click-on-project">
+                                            <img src="media/digitala-icon-project.svg">
+                                            <span>Peti projekat: Sprovedite Google Ads kampanju</span>
+                                        </div>
+                                        <div class="popup-project-holder popup-video-holder">
+                                            <div class="popup-project">
+                                                <span class="project-close-btn">X</span>
+                                                <h6 class="special-h6">Peti projekat</h6>
+                                                <h3>Sprovedite Google Ads kampanju</h3>
+                                                <p>U ovom projektu, napravićete, sprovesti, i posmatrati marketing
+                                                    kampanju na internet pretraživaču pomoću Google Ads platforme za
+                                                    proizvod vaše kompanije. Dok je kampanja u toku, testiraćete,
+                                                    posmatrati, i optimizirati rezultate za najbolji moguć ROI.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="find-out-more">Detaljnije</span>
+                                        <div class="popup-video-holder popup-find-out-more-holder">
+                                            <div class="popup-find-out-more">
+                                                <div class="header">
+                                                    <div class="popup-find-out-more-close-btn">X</div>
+                                                    <!--Content before waves-->
+                                                    <div class="inner-header flex">
+                                                        <h1>Web marketing i WordPress</h1>
+                                                    </div>
+                                                    <!--Waves Container-->
+                                                    <div>
+                                                        <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 24 150 28" preserveAspectRatio="none"
+                                                            shape-rendering="auto">
+                                                            <defs>
+                                                                <path id="gentle-wave"
+                                                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                                            </defs>
+                                                            <g class="parallax">
+                                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                                    fill="rgba(255,255,255,0.7" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                                    fill="rgba(255,255,255,0.5)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                                    fill="rgba(255,255,255,0.3)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                                    fill="#fff" />
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <!--Waves end-->
+                                                </div>
+                                                <!--Header ends-->
+                                                <!--Content starts-->
+                                                <div class="content">
+                                                </div>
+                                                <!--Content ends-->
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="card-holder">
+                                <div class="card">
+                                    <h4>Google Display oglasi</h4>
+                                    <p>Display oglasi, ili oglasi putem banera, su prva vrsta oglašavanja na internetu.
+                                        Još uvijek su efektivna alternativa, ojačana novim platformama kao što su
+                                        mobilni uređaji, video platforme, i ciljani marketing. U ovom predmetu naučite
+                                        šta su display oglasi, kako se kupuju i prodaju (uključujući i kontekst
+                                        programskog zakupa), te kako pokrenuti display oglasnu kampanju pomoću Google
+                                        Ads-a.</p>
+                                    <footer>
+                                        <div class="click-on-project">
+                                            <img src="media/digitala-icon-project.svg">
+                                            <span>Šesti projekat: Evaluacija display oglasne kampanje</span>
+                                        </div>
+                                        <div class="popup-project-holder popup-video-holder">
+                                            <div class="popup-project">
+                                                <span class="project-close-btn">X</span>
+                                                <h6 class="special-h6">Šesti projekat</h6>
+                                                <h3>Evaluacija display oglasne kampanje</h3>
+                                                <p>U ovom projektu provjeriti ćete rezultate display oglasne kampanje i
+                                                    napraviti prezentaciju rezultata za menadžment. Vaš sažetak će
+                                                    sadržati strategiju ciljanja, korištene materijale, rezultate
+                                                    kampanje, kao i preporuke poboljšanja kampanje.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="find-out-more">Detaljnije</span>
+                                        <div class="popup-video-holder popup-find-out-more-holder">
+                                            <div class="popup-find-out-more">
+                                                <div class="header">
+                                                    <div class="popup-find-out-more-close-btn">X</div>
+                                                    <!--Content before waves-->
+                                                    <div class="inner-header flex">
+                                                        <h1>Web marketing i WordPress</h1>
+                                                    </div>
+                                                    <!--Waves Container-->
+                                                    <div>
+                                                        <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 24 150 28" preserveAspectRatio="none"
+                                                            shape-rendering="auto">
+                                                            <defs>
+                                                                <path id="gentle-wave"
+                                                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                                            </defs>
+                                                            <g class="parallax">
+                                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                                    fill="rgba(255,255,255,0.7" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                                    fill="rgba(255,255,255,0.5)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                                    fill="rgba(255,255,255,0.3)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                                    fill="#fff" />
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <!--Waves end-->
+                                                </div>
+                                                <!--Header ends-->
+                                                <!--Content starts-->
+                                                <div class="content">
+                                                </div>
+                                                <!--Content ends-->
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="card-holder">
+                                <div class="card">
+                                    <h4>Email Marketing</h4>
+                                    <p>Email je efikasan marketinški kanal, posebno za faze lupovnog ciklusa kao što je
+                                        konverzija. U ovom predmetu, naučite kako napraviti marketinšku strategiju putem
+                                        emaila, sprovedite kampanje i izmjerite rezultate.</p>
+                                    <footer>
+                                        <div class="click-on-project">
+                                            <img src="media/digitala-icon-project.svg">
+                                            <span>Sedmi Projekat: Email marketing</span>
+                                        </div>
+                                        <div class="popup-project-holder popup-video-holder">
+                                            <div class="popup-project">
+                                                <span class="project-close-btn">X</span>
+                                                <h6 class="special-h6">Sedmi Projekat</h6>
+                                                <h3>Email marketing</h3>
+                                                <p>U ovom projektu, planiraćete i pripremiti email marketinšku kampanju
+                                                    za proizvod vaše kompanije. Napisaćete email i evaluirati ishod
+                                                    email kampanje.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="find-out-more">Detaljnije</span>
+                                        <div class="popup-video-holder popup-find-out-more-holder">
+                                            <div class="popup-find-out-more">
+                                                <div class="header">
+                                                    <div class="popup-find-out-more-close-btn">X</div>
+                                                    <!--Content before waves-->
+                                                    <div class="inner-header flex">
+                                                        <h1>Web marketing i WordPress</h1>
+                                                    </div>
+                                                    <!--Waves Container-->
+                                                    <div>
+                                                        <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 24 150 28" preserveAspectRatio="none"
+                                                            shape-rendering="auto">
+                                                            <defs>
+                                                                <path id="gentle-wave"
+                                                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                                            </defs>
+                                                            <g class="parallax">
+                                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                                    fill="rgba(255,255,255,0.7" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                                    fill="rgba(255,255,255,0.5)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                                    fill="rgba(255,255,255,0.3)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                                    fill="#fff" />
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <!--Waves end-->
+                                                </div>
+                                                <!--Header ends-->
+                                                <!--Content starts-->
+                                                <div class="content">
+                                                </div>
+                                                <!--Content ends-->
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="card-holder">
+                                <div class="card">
+                                    <h4>Mjerenje i optimizacija - Google Analitika</h4>
+                                    <p>Mogućnost mjerenja čini digitalni marketing posebnim. Činjenica je da se sve
+                                        online može pratiti, uključujući učinke vašeg digitalnog marketinga i rezultati
+                                        reklama. U ovom predmetu naučite kako koristiti Google analitiku kako bi
+                                        evaluirali svoju publiku, izmjerili uspjeh akvizicije, angažovanost, te
+                                        konverziju kupaca. Iskoristite te informacije kako biste planirali vaš
+                                        marketinški budžet.</p>
+                                    <footer>
+                                        <div class="click-on-project">
+                                            <img src="media/digitala-icon-project.svg">
+                                            <span>Osmi projekat: portfolio </span>
+                                        </div>
+                                        <div class="popup-project-holder popup-video-holder">
+                                            <div class="popup-project">
+                                                <span class="project-close-btn">X</span>
+                                                <h6 class="special-h6">Osmi projekat</h6>
+                                                <h3> Portfolio </h3>
+                                                <p>U ovom projektu, rezimiraćete različite marketinške kampanje koje ste
+                                                    sproveli i ući malo dublje u analizu rezultata. Ocijenite ROI vaših
+                                                    kampanja, uporedite rezultate sa rezultatima drugih platformi,
+                                                    preporučite promjene za buduće marketinške kampanje i alokacije
+                                                    budžeta.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="find-out-more">Detaljnije</span>
+                                        <div class="popup-video-holder popup-find-out-more-holder">
+                                            <div class="popup-find-out-more">
+                                                <div class="header">
+                                                    <div class="popup-find-out-more-close-btn">X</div>
+                                                    <!--Content before waves-->
+                                                    <div class="inner-header flex">
+                                                        <h1>Web marketing i WordPress</h1>
+                                                    </div>
+                                                    <!--Waves Container-->
+                                                    <div>
+                                                        <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                                            viewBox="0 24 150 28" preserveAspectRatio="none"
+                                                            shape-rendering="auto">
+                                                            <defs>
+                                                                <path id="gentle-wave"
+                                                                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                                            </defs>
+                                                            <g class="parallax">
+                                                                <use xlink:href="#gentle-wave" x="48" y="0"
+                                                                    fill="rgba(255,255,255,0.7" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="3"
+                                                                    fill="rgba(255,255,255,0.5)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="5"
+                                                                    fill="rgba(255,255,255,0.3)" />
+                                                                <use xlink:href="#gentle-wave" x="48" y="7"
+                                                                    fill="#fff" />
+                                                            </g>
+                                                        </svg>
+                                                    </div>
+                                                    <!--Waves end-->
+                                                </div>
+                                                <!--Header ends-->
+                                                <!--Content starts-->
+                                                <div class="content">
+                                                </div>
+                                                <!--Content ends-->
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+
+                        </main>
+                    </div>
+                    <div class="right">
+                        <aside class="need-to-prepare">
+                            <i class="fas fa-book-reader"></i>
+                            <h6 class="special-h6">Trebate spremiti?</h6>
+                            <p> Potrban vam je Gmail i Facbook račun da biste kompletirali projekte.</p>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section id="program" class="all-programs-include">
+        <div class="funtenjer">
+            <h4 class="section-title">Naš nanodegree program uključuje</h4>
+            <div class="cards-grid">
+                <div class="card-field-grid">
+                    <div class="img-holder">
+                        <img src="media/real-world-projects.png" alt="">
+                    </div>
+                    <div class="information">
+
+                        <h4 class="title">
+                            <div class="circle">
+                                <img src="media/experts.svg" alt="">
+                            </div> <span>Praktični projekti</span> od stručnjaka iz industrije
+                        </h4>
+                        <p> S projektima iz stvarnog svijeta i sadržajem izgrađenim u partnerstvu sa kompanijama,
+                            savladaćete tehnologije koje kompanije žele.</p>
+                    </div>
+                </div>
+                <div class="card-field-grid">
+                    <div class="img-holder">
+                        <img src="media/slika2.jpg" alt="">
+
+                    </div>
+                    <div class="information">
+                        <div class="circle">
+                            <img src="media/coding-icon.svg" alt="">
+                        </div>
+                        <h4 class="title"><span>1-na-1</span> tehnički mentor </h4>
+                        <p>Dobit ćete mentora koji ce vas voditi kroz kroz program i fokusirat se na vaša pitanja ali
+                            takođe će probati da vas motiviraju da zavriste program.</p>
+                    </div>
+                </div>
+                <div class="card-field-grid">
+                    <div class="img-holder">
+                        <img src="media/businessman-man-space-desk-7059.jpg" alt="">
+                    </div>
+                    <div class="information">
+                        <div class="circle">
+                            <img src="media/career.svg" alt="">
+                        </div>
+                        <h4 class="title"><span>Fleksibilan</span> program</h4>
+                        <p>Kreirajte vlastiti plan učenja prilagođen vašem životu. Učite svojim tempom i postižite svoje
+                            osobne ciljeve na rasporedu koji vam najbolje odgovara.</p>
+                    </div>
+                </div>
+                <div class="card-field-grid">
+                    <div class="img-holder">
+                        <img src="media/two-woman-and-one-man-looking-at-the-laptop-1036641.jpg" alt="">
+                    </div>
+                    <div class="information">
+                        <div class="circle">
+                            <img src="media/learningsched.svg" alt="">
+                        </div>
+                        <h4 class="title"><span>Postanite dio</span> digital marketing mreže</h4>
+                        <p>Pohađanjem postajete dio digitala digital marketing porodice gjde možete se posavjetovati ili
+                            postaviti pitanje i nakon što zavrsite ovaj program.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="professors" class="learn-with-the-best">
+        <div class="funtenjer-big">
+            <h4 class="section-title">Učite od najboljih</h4>
+            <div class="cards-holder-grid">
+                <div class="card">
+                    <img src="media/person1.png" alt="">
+                    <h5>Dr. Mersid Poturak</h5>
+                    <h6 class="special-h6">instruktor</h6>
+                    <p>Trenutno obnaša funkciju dekana Fakulteta za ekonomiju i društvene nauke, Internacionalnog Burč
+                        univerziteta.
+                        Magistrirao i doktorirao marketing i predaje predmete poput Strateškog marketinga, Digitalnog
+                        marketinga, Marketing menadžmenta, Marketing usluga itd.</p>
+                </div>
+                <div class="card">
+                    <img src="media/person2.png" alt="">
+                    <h5>Msc. Ekrem Nurović</h5>
+                    <h6 class="special-h6">instruktor</h6>
+                    <p>Završio osnovne studije iz oblasti Menadžmenta na Internacionalnom Burch Univerzitetu,
+                        specializirao se u oblasti Marketinga i uspješno okončao master
+                        studije na istom univerzitetu.</p>
+                </div>
+                <div class="card">
+                    <img src="media/person2.png" alt="">
+                    <h5>Msc. Ekrem Nurović</h5>
+                    <h6 class="special-h6">instruktor</h6>
+                    <p>Završio osnovne studije iz oblasti Menadžmenta na Internacionalnom Burch Univerzitetu,
+                        specializirao se u oblasti Marketinga i uspješno okončao master
+                        studije na istom univerzitetu.</p>
+                </div>
+                <div class="card">
+                    <img src="media/person2.png" alt="">
+                    <h5>Msc. Ekrem Nurović</h5>
+                    <h6 class="special-h6">instruktor</h6>
+                    <p>Završio osnovne studije iz oblasti Menadžmenta na Internacionalnom Burch Univerzitetu,
+                        specializirao se u oblasti Marketinga i uspješno okončao master
+                        studije na istom univerzitetu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="price" class="get-started-with">
+        <div class="funtenjer-mini">
+            <div class="grid-layout">
+                <div class="info">
+                    <h6 class="feature-flag">Započnite</h6>
+                    <h3>Digitalni marketing nanodegree program</h3>
+                    <div class="feature">
+                        <div class="feature-header">
+                            <div class="title">
+                                <img src="media/pie-slice.svg" alt="">
+                                <h6 class="special-h6">Naučite</h6>
+                            </div>
+                            <p> Imat ćete pristup programu, časovima, materijalu i vaše projekte će pregledati eksperti.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-header">
+                            <div class="title">
+                                <img src="media/icon-clock.svg" alt="">
+                                <h6 class="special-h6">Prosječno vrijeme</h6>
+                            </div>
+                            <p>U prosjeku potrebno je 3 mjeseca da se uspješno završi ovaj program.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-header">
+                            <div class="title">
+                                <img src="media/digitala-icon-project.svg" alt="">
+                                <h6 class="special-h6">Beneficije</h6>
+                            </div>
+                            <ul>
+                                <li>Praktični projekti</li>
+                                <li>1-na-1 tehnički mentor</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="prices">
+                    <div class="price-container">
+                        <h6 class="special-h6">3 mjeseca pristup specijalna ponuda</h6>
+                        <span class="price-payable">299KM</span>
+                        <p>Specialna akcija za uplate do 1. Januara.</p>
+                        <a class="show-to-pay"><button class="primary-btn">Prijavi se</button></a>
+                    </div>
+                    <div class="price-container">
+                        <h6 class="special-h6">3 mjeseca pristup rana pretplata</h6>
+                        <span class="price-payable">499KM</span>
+                        <p>Za prijave do 1. Februara.</p>
+                        <a class="show-to-pay"><button class="primary-btn" disabled>Prijavi se</button></a>
+                    </div>
+                    <div class="price-container">
+                        <h6 class="special-h6">3 mjeseca pristup</h6>
+                        <span class="price-payable">750KM</span>
+                        <p>Regularna cijena.</p>
+                        <a class="show-to-pay"><button class="primary-btn" disabled>Prijavi se</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div>
+            <span>© Digitala 2019. Sva prava zadržana.</span>
+        </div>
+        <div class="social-ico">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <div id="payment-holder" class="popup-video-holder">
+        <div class="popup-payment">
+            <span id="popup-payment-close" class="project-close-btn">X</span>
+            <div class="second-option-payment-container">
+
+                <div class="info-header">
+                    <h1>Nasi podaci:</h1>
+                    <div class="trans-summary">
+                        <div class="trans-item">
+                            <div class="trans-label ">
+                                Iznos
+                            </div>
+                            <div>
+                                <div class="amount" id="dollar">299.00</div>
+                                <div class="amount" id="amount">KM</div>
+                            </div>
+                        </div>
+
+                        <div class="trans-items-holder">
+                            <div class="trans-item">
+                                <div class="trans-label">
+                                    Ime i prezime:
+                                </div>
+                                <div class="trans-value">
+                                    <span>Johan Smith</span>
+                                </div>
+                            </div>
+                            <div class="trans-item">
+                                <div class="trans-label">
+                                    Primalac:
+                                </div>
+                                <div class="trans-value">
+                                    Digitala d.o.o.
+                                </div>
+                            </div>
+                            <div class="trans-item">
+                                <div class="trans-label">
+                                    Svrha doznake:
+                                </div>
+                                <div class="trans-value">
+                                    Uplata Digitala online kursa
+                                </div>
+                            </div>
+                            <div class="trans-item">
+                                <div class="trans-label">
+                                    Račun primaoca:
+                                </div>
+                                <div class="trans-value">
+                                    0254139874123459
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop-files">
+                    <p>
+                        Za više informacija
+                    </p>
+
+                </div>
+                <div class="drop-files-info">
+
+                    <div id="gallery" class="gallery"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- //This ltlone too -->
+<script src="js/landingpage.js"></script>
+<script src="js/countdown.js"></script>
+
+</html>
