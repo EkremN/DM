@@ -38,7 +38,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 
@@ -54,7 +54,7 @@ body{
 .hamburger-nav ul li:hover{
     background: var(--secondary);
     transition: .5s;
-    color: #fff;   
+    color: #fff;
 }
 
 .slide{
@@ -90,7 +90,7 @@ body{
     position: absolute;
     bottom: 50%;
  }
- 
+
  .slide:checked ~ .spans .span:last-child{
     transform: rotate(-45deg);
     position: absolute;
@@ -381,7 +381,7 @@ body{
 
 .what-you-will-learn .container {
     background: #fff;
-   
+
 }
 
 .syllabus-header-grid {
@@ -458,7 +458,7 @@ body{
 .syllabus-body-grid {
     display: grid;
     grid-template: 1fr / 2fr 1fr;
-    
+
 
 }
 
@@ -579,7 +579,7 @@ body{
     z-index: 100;
     font-size: 30px;
     padding: 0 20px;
-} 
+}
 
 .header {
     position:relative;
@@ -598,21 +598,21 @@ body{
   .popup-find-out-more-close-btn:hover{
     color: var(--secondary);
 }
-  
+
   .inner-header {
     height:30vh;
     width:100%;
     margin: 0;
     padding: 0;
   }
-  
+
   .flex { /*Flexbox for containers*/
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  
+
   .waves {
     position:relative;
     width: 100%;
@@ -621,7 +621,7 @@ body{
     min-height:100px;
     max-height:150px;
   }
-  
+
   .popup-find-out-more .content {
     padding: 50px 0 15px 80px;
   }
@@ -638,7 +638,7 @@ body{
     margin-left:60px;
     list-style-type: square;
   }
-  
+
 
 
 /* //END */
@@ -920,7 +920,7 @@ body{
     position: relative;
     padding: 10px 50px;
     z-index: 12;
-    
+
 }
 
 .popup-payment .project-close-btn{
@@ -980,7 +980,7 @@ body{
 }
 
 
-/* //END */  
+/* //END */
 
 @keyframes raste {
     from {height: 0;}
@@ -1007,10 +1007,27 @@ body{
 
 }
 
+@media screen and (max-width: 700px){
+
+    .count-down-section .content h1 {
+        font-size: 30px;
+    }
+
+}
+
 @media screen and (max-width: 900px) {
 
     .header-nav{
         display: none;
+    }
+
+    .page-header{
+      padding: 0 20px;
+      height: 60px;
+    }
+
+    .page-heder .logo{
+      height: 10px;
     }
 
     .page-header .hamburger-menu{
@@ -1033,10 +1050,16 @@ body{
 
     .count-down-section .content h1 {
         margin-top:0 ;
+        font-size: 30px;
+    }
+
+    .count-down-section .content p {
+      padding: 0;
     }
 
     .count-down-section .content .buttons-holder {
-        padding: 0 30px;
+        padding: 0 0px;
+        margin-bottom:10px;
     }
 
     .count-down-section .content .buttons-holder button {
@@ -1093,7 +1116,7 @@ body{
         height:40px;
         min-height:40px;
       }
-  
+
       .popup-find-out-more-holder .popup-find-out-more{
           height:100vh;
       }
