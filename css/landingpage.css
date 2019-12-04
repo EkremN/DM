@@ -22,7 +22,7 @@ body{
 
 .side{
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0;
     background:#fff;
     width: 100%;
@@ -381,6 +381,7 @@ body{
 
 .what-you-will-learn .container {
     background: #fff;
+    overflow: hidden;
    
 }
 
@@ -448,6 +449,11 @@ body{
     text-transform: uppercase;
     cursor: pointer;
     margin-left: 7px;
+}
+
+.syllabus-header-grid footer .details,
+.syllabus-header-grid footer .details span{
+    margin: 0;
 }
 
 .syllabus-header-grid footer span {
@@ -733,7 +739,6 @@ body{
 
 .learn-with-the-best .cards-holder-grid .card {
     background: #fff;
-    ;
     text-align: center;
     padding: 0 60px;
     border-top: 4px solid var(--secondary);
@@ -1007,10 +1012,21 @@ body{
 
 }
 
+
+
 @media screen and (max-width: 900px) {
 
     .header-nav{
         display: none;
+    }
+
+    .page-header{
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    .page-header .logo{
+        height: 40px;
     }
 
     .page-header .hamburger-menu{
@@ -1036,7 +1052,7 @@ body{
     }
 
     .count-down-section .content .buttons-holder {
-        padding: 0 30px;
+        padding: 0 10px;
     }
 
     .count-down-section .content .buttons-holder button {
@@ -1049,6 +1065,11 @@ body{
     .get-started-with .grid-layout
     {
         grid-template: 1fr / 1fr;
+    }
+
+    .all-programs-include .card-field-grid .information p {
+        margin-top: 40px;
+        margin-left: -60px;
     }
 
     .course-information-table>div {
@@ -1093,7 +1114,8 @@ body{
         height:40px;
         min-height:40px;
       }
-  
+      .popup-payment,
+      .popup-project-holder .popup-project,
       .popup-find-out-more-holder .popup-find-out-more{
           height:100vh;
       }
@@ -1101,8 +1123,72 @@ body{
       .mouse-scroll{
           display: none;
       }
+
+      .popup-find-out-more .content {
+        padding: 50px 0 15px 20px;
+    }
+
+    .syllabus-header-grid footer > div:last-child{
+        display: none;
+     }
+ 
+     .syllabus-header-grid>div:first-child {
+        padding: 72px 30px 0;
+    }
+
+     .syllabus-body-grid .left {
+        padding: 50px 30px 20px;
+    }
+
+    .syllabus-body-grid .left .card-holder {
+        padding: 0 0 45px 20px;
+    }
+
+    .syllabus-body-grid .left .card-holder footer .click-on-project span{
+        font-size:12px;
+    }
+
+    .learn-with-the-best .cards-holder-grid {
+        padding: 0;
+    }
+
+    .learn-with-the-best .cards-holder-grid .card {
+        padding: 15px;
+    }
+
+    .get-started-with .grid-layout .info{
+        padding:30px 25px 0 44px;;
+    }
+    
+    .learn-with-the-best .cards-holder-grid .card h5 {
+        font-size: 25px;
+        margin: 100px 0 0 0;
+    
+    }
+
 }
 
 /* //END */
 
+
+@media screen and (max-width: 400px) {
+
+    .count-down-section .content h1 {
+        font-size:25px ;
+    }
+
+    .count-down-section .content p {
+        padding: 0;
+    }
+
+    .count-down-section .content .buttons-holder {
+        padding: 0px 0px;
+        margin-bottom:30px;
+    }
+
+    .flag{
+        padding-left:20px;
+    }
+
+}
 
