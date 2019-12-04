@@ -1,3 +1,7 @@
+body{
+    overflow:auto;
+}
+
 .page-header{
     z-index: 100;
     position: fixed;
@@ -18,7 +22,7 @@
 
 .side{
     position: absolute;
-    top: 80px;
+    top: 60px;
     left: 0;
     background:#fff;
     width: 100%;
@@ -168,10 +172,11 @@
     z-index: 10;
     text-align: center;
     color: #fff;
+    padding: 0 20px;
 }
 
 .count-down-section .content h5 {
-
+    margin-top: 80px;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -189,7 +194,7 @@
     grid-gap: 15px;
     margin-bottom: 50px;
 }
-
+.count-down-section .content .buttons-holder form button,
 .count-down-section .content .buttons-holder button {
     padding: 13px 0;
     color: #fff;
@@ -201,28 +206,23 @@
     transition: all 0.3s ease;
     cursor: pointer;
     letter-spacing: 2px;
+    width: 100%;
 }
 
+.count-down-section .content .buttons-holder form button:hover {
+    color: var(--primary);
+    background: #fff;
+}
+
+.count-down-section .content .buttons-holder button{
+    color: var(--primary);
+    background: #fff;
+}
 
 .count-down-section .content .buttons-holder button:hover {
-    color: var(--primary);
-    background: #fff;
-}
-
-.count-down-section .content .buttons-holder button:last-child {
-    color: var(--primary);
-    background: #fff;
-}
-
-.count-down-section .content .buttons-holder button:last-child:hover {
     color: #fff;
     background: var(--primary);
 }
-
-/* #btn1:hover ~  #btn2{
-    color: #fff;
-    background:var(--primary);
-} */
 
 
 .count-down-section .content .caunter-holder ul {
@@ -300,6 +300,18 @@
     z-index: 10;
 }
 
+.mouse-scroll{
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    border: 10px solid transparent;
+    border-top-color: #fff;
+    animation: m-5-arrow 1.2s ease-in-out infinite;
+    margin-left: -7px;
+    transform: translate(-50%);
+}
+
+
 /* ////IMPORTANT CONTAINER HERE */
 
 .funtenjer {
@@ -310,7 +322,10 @@
 .funtenjer-mini {
     margin: 0 auto;
     max-width: 900px;
-    ;
+}
+.funtenjer-big{
+    margin: 0 auto;
+    max-width: 1700px;
 }
 
 /* //END OF IMPORTANT THINGS */
@@ -366,6 +381,7 @@
 
 .what-you-will-learn .container {
     background: #fff;
+    overflow: hidden;
    
 }
 
@@ -426,13 +442,18 @@
 
 .syllabus-header-grid footer .details,
 .syllabus-header-grid footer .details span,
-.syllabus-body-grid .left .card-holder footer span {
+.syllabus-body-grid .left .card-holder footer  span {
     color: var(--primary);
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
     cursor: pointer;
     margin-left: 7px;
+}
+
+.syllabus-header-grid footer .details,
+.syllabus-header-grid footer .details span{
+    margin: 0;
 }
 
 .syllabus-header-grid footer span {
@@ -487,6 +508,20 @@
     border-radius: 50%;
 }
 
+.syllabus-body-grid .left .card-holder footer {
+    display: inline-flex;
+    flex-direction: column;;
+}
+
+.syllabus-body-grid .left .card-holder footer .find-out-more {
+    margin-top: 15px;
+    font-size: 13px;
+    color:var(--secondary);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+}
+
 
 
 .syllabus-body-grid .left .card-holder footer .click-on-project {
@@ -506,12 +541,14 @@
 .popup-project-holder .popup-project .project-close-btn {
     position: absolute;
     top: 10px;
-    right: 20px;
-    transition: ease .6s transform;
+    right: 10px;
+    padding:0 10px;
+    transition: ease .6s;
 }
 
 .popup-project-holder .popup-project .project-close-btn:hover {
-    transform: rotate(360deg);
+    background: var(--primary);
+    color: #fff;
 }
 
 .syllabus-body-grid .right {
@@ -532,6 +569,82 @@
 .syllabus-body-grid .right .need-to-prepare h6 {
     margin: 0;
 }
+
+.popup-find-out-more-holder .popup-find-out-more{
+    width: 100%;
+    max-width: 900px;
+    height: 94vh;
+    overflow:auto;
+    background: #fff;
+    margin: auto;
+    position: relative;
+}
+
+.popup-find-out-more-holder .popup-find-out-more .header h1{
+    margin: 0;
+    z-index: 100;
+    font-size: 30px;
+    padding: 0 20px;
+} 
+
+.header {
+    position:relative;
+    text-align:center;
+    background: linear-gradient(60deg, var(--secondary) 0%, var(--primary) 100%);
+    color:#fff;
+  }
+
+  .popup-find-out-more-close-btn{
+      position: absolute;
+      top: 10px;
+      right:20px;
+      cursor:pointer;
+  }
+
+  .popup-find-out-more-close-btn:hover{
+    color: var(--secondary);
+}
+  
+  .inner-header {
+    height:30vh;
+    width:100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .flex { /*Flexbox for containers*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .waves {
+    position:relative;
+    width: 100%;
+    height:15vh;
+    margin-bottom:-7px; /*Fix for safari gap*/
+    min-height:100px;
+    max-height:150px;
+  }
+  
+  .popup-find-out-more .content {
+    padding: 50px 0 15px 80px;
+  }
+
+  .popup-find-out-more .content ul li{
+    margin-left:20px;
+    list-style-type: disc;
+  }
+  .popup-find-out-more .content ul ul li{
+    margin-left:40px;
+    list-style-type: circle;
+  }
+  .popup-find-out-more .content ul ul ul li{
+    margin-left:60px;
+    list-style-type: square;
+  }
+  
 
 
 /* //END */
@@ -619,13 +732,13 @@
 
 .learn-with-the-best .cards-holder-grid {
     display: grid;
-    grid-template: 1fr / 1fr 1fr;
+    grid-template: auto / 1fr 1fr 1fr 1fr;
     column-gap: 25px;
+    padding: 0 25px;
 }
 
 .learn-with-the-best .cards-holder-grid .card {
     background: #fff;
-    ;
     text-align: center;
     padding: 0 60px;
     border-top: 4px solid var(--secondary);
@@ -766,7 +879,13 @@
     background: #fff;
     border-radius: 7px;
     padding: 20px 30px;
-    /* text-align: center; */
+}
+
+
+/* //INTERACT WITH PRICES OFFRES */
+
+.get-started-with .grid-layout .prices .price-container:not(:first-child) {
+    background: rgb(255, 255, 255,.7);
 }
 
 .get-started-with .grid-layout .prices .price-container h6 {
@@ -798,7 +917,8 @@
 
 
  .popup-payment{
-    width:500px;
+    width: 100%;
+    max-width:650px;
     margin: auto;
     background: #fff;
     box-shadow: 0px -2px 12px rgba(0, 0, 0, 0.1);
@@ -810,15 +930,18 @@
 
 .popup-payment .project-close-btn{
     position: absolute;
-    right: 20px;
+    right: 10px;
+    padding: 0 10px;
     top: 20px;
     cursor: pointer;
-    transition: ease .6s transform;
+    transition: ease .6s;
     color: var(--primary);
 }
 
 .popup-payment .project-close-btn:hover {
-    transform: rotate(360deg);
+    color: #fff;
+    background: var(--primary);
+
 }
 
 .second-option-payment-container{
@@ -864,9 +987,32 @@
 
 /* //END */  
 
+@keyframes raste {
+    from {height: 0;}
+    to {height: 100%;}
+  }
+
 
 
 /* //RESPOSNIVE STUFF */
+
+@media screen and (max-width: 1200px) {
+
+    .learn-with-the-best .cards-holder-grid {
+        display: grid;
+        grid-template: auto / 1fr 1fr;
+        column-gap: 25px;
+        row-gap:120px ;
+        padding: 0 25px;
+    }
+
+    /* .learn-with-the-best .cards-holder-grid .card:not(:first-child){
+        margin-top: 120px;
+    } */
+
+}
+
+
 
 @media screen and (max-width: 900px) {
 
@@ -874,12 +1020,22 @@
         display: none;
     }
 
+    .page-header{
+        padding: 0 20px;
+        height: 60px;
+    }
+
+    .page-header .logo{
+        height: 40px;
+    }
+
     .page-header .hamburger-menu{
         display: block;
     }
 
     .funtenjer,
-    .funtenjer-mini {
+    .funtenjer-mini,
+    .funtenjer-big {
         padding: 0 20px;
     }
 
@@ -896,7 +1052,11 @@
     }
 
     .count-down-section .content .buttons-holder {
-        padding: 0 30px;
+        padding: 0 10px;
+    }
+
+    .count-down-section .content .buttons-holder button {
+        font-size: 11px;
     }
 
     .course-information-table,
@@ -905,6 +1065,11 @@
     .get-started-with .grid-layout
     {
         grid-template: 1fr / 1fr;
+    }
+
+    .all-programs-include .card-field-grid .information p {
+        margin-top: 40px;
+        margin-left: -60px;
     }
 
     .course-information-table>div {
@@ -944,8 +1109,86 @@
     .get-started-with .grid-layout .prices {
         margin-top: 25px;
     }
+
+    .waves {
+        height:40px;
+        min-height:40px;
+      }
+      .popup-payment,
+      .popup-project-holder .popup-project,
+      .popup-find-out-more-holder .popup-find-out-more{
+          height:100vh;
+      }
+
+      .mouse-scroll{
+          display: none;
+      }
+
+      .popup-find-out-more .content {
+        padding: 50px 0 15px 20px;
+    }
+
+    .syllabus-header-grid footer > div:last-child{
+        display: none;
+     }
+ 
+     .syllabus-header-grid>div:first-child {
+        padding: 72px 30px 0;
+    }
+
+     .syllabus-body-grid .left {
+        padding: 50px 30px 20px;
+    }
+
+    .syllabus-body-grid .left .card-holder {
+        padding: 0 0 45px 20px;
+    }
+
+    .syllabus-body-grid .left .card-holder footer .click-on-project span{
+        font-size:12px;
+    }
+
+    .learn-with-the-best .cards-holder-grid {
+        padding: 0;
+    }
+
+    .learn-with-the-best .cards-holder-grid .card {
+        padding: 15px;
+    }
+
+    .get-started-with .grid-layout .info{
+        padding:30px 25px 0 44px;;
+    }
+    
+    .learn-with-the-best .cards-holder-grid .card h5 {
+        font-size: 25px;
+        margin: 100px 0 0 0;
+    
+    }
+
 }
 
 /* //END */
 
+
+@media screen and (max-width: 400px) {
+
+    .count-down-section .content h1 {
+        font-size:25px ;
+    }
+
+    .count-down-section .content p {
+        padding: 0;
+    }
+
+    .count-down-section .content .buttons-holder {
+        padding: 0px 0px;
+        margin-bottom:30px;
+    }
+
+    .flag{
+        padding-left:20px;
+    }
+
+}
 
