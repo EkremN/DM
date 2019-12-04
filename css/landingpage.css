@@ -38,7 +38,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
 
@@ -54,7 +54,7 @@ body{
 .hamburger-nav ul li:hover{
     background: var(--secondary);
     transition: .5s;
-    color: #fff;   
+    color: #fff;
 }
 
 .slide{
@@ -90,7 +90,7 @@ body{
     position: absolute;
     bottom: 50%;
  }
- 
+
  .slide:checked ~ .spans .span:last-child{
     transform: rotate(-45deg);
     position: absolute;
@@ -382,7 +382,7 @@ body{
 .what-you-will-learn .container {
     background: #fff;
     overflow: hidden;
-   
+
 }
 
 .syllabus-header-grid {
@@ -464,7 +464,7 @@ body{
 .syllabus-body-grid {
     display: grid;
     grid-template: 1fr / 2fr 1fr;
-    
+
 
 }
 
@@ -585,7 +585,7 @@ body{
     z-index: 100;
     font-size: 30px;
     padding: 0 20px;
-} 
+}
 
 .header {
     position:relative;
@@ -604,21 +604,21 @@ body{
   .popup-find-out-more-close-btn:hover{
     color: var(--secondary);
 }
-  
+
   .inner-header {
     height:30vh;
     width:100%;
     margin: 0;
     padding: 0;
   }
-  
+
   .flex { /*Flexbox for containers*/
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
-  
+
   .waves {
     position:relative;
     width: 100%;
@@ -627,7 +627,7 @@ body{
     min-height:100px;
     max-height:150px;
   }
-  
+
   .popup-find-out-more .content {
     padding: 50px 0 15px 80px;
   }
@@ -644,7 +644,7 @@ body{
     margin-left:60px;
     list-style-type: square;
   }
-  
+
 
 
 /* //END */
@@ -925,7 +925,7 @@ body{
     position: relative;
     padding: 10px 50px;
     z-index: 12;
-    
+
 }
 
 .popup-payment .project-close-btn{
@@ -985,7 +985,7 @@ body{
 }
 
 
-/* //END */  
+/* //END */
 
 @keyframes raste {
     from {height: 0;}
@@ -1131,7 +1131,7 @@ body{
     .syllabus-header-grid footer > div:last-child{
         display: none;
      }
- 
+
      .syllabus-header-grid>div:first-child {
         padding: 72px 30px 0;
     }
@@ -1159,19 +1159,24 @@ body{
     .get-started-with .grid-layout .info{
         padding:30px 25px 0 44px;;
     }
-    
+
     .learn-with-the-best .cards-holder-grid .card h5 {
         font-size: 25px;
         margin: 100px 0 0 0;
-    
+
     }
 
 }
 
 /* //END */
 
-
 @media screen and (max-width: 400px) {
+
+    .funtenjer,
+    .funtenjer-mini,
+    .funtenjer-big {
+        padding: 0 10px;
+    }
 
     .count-down-section .content h1 {
         font-size:25px ;
