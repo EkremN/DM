@@ -619,9 +619,8 @@
 
 .learn-with-the-best .cards-holder-grid {
     display: grid;
-    grid-template: auto / 1fr 1fr;
+    grid-template: 1fr / 1fr 1fr;
     column-gap: 25px;
-    margin: auto;
 }
 
 .learn-with-the-best .cards-holder-grid .card {
@@ -927,10 +926,6 @@
 
     aside {
         display: none;
-    }
-
-    .learn-with-the-best .cards-holder-grid .card:last-child{
-        margin-top: 120px;
     }
 
     .all-programs-include .card-field-grid {
