@@ -33,6 +33,15 @@ Array.from(navHamburgerBtns).forEach(e => {
     })
 });
 
+Array.from(popupFindOutMoreHolder).forEach((e, i) => {
+    e.addEventListener("click", (el) => {
+        if(el.target == popupFindOutMoreHolder[i]){
+        changeDisplay(popupFindOutMoreHolder[i], "none")
+      }
+      else return;
+    })
+});
+
 Array.from(popupFindOutMoreHolderCloseBtn).forEach((e, i) => {
     e.addEventListener("click", () => {
         changeDisplay(popupFindOutMoreHolder[i], "none")
@@ -65,7 +74,7 @@ hideDetails.addEventListener("click", () => {
     }
     if(isToggled){
         syllabusBody.style.display = "grid"
-        hideDetailsSign.textContent = "-" 
+        hideDetailsSign.textContent = "-"
     }
     isToggled = !isToggled;
 })
@@ -77,6 +86,16 @@ Array.from(clickProject).forEach((e, i) => {
 });
 
 Array.from(projectHolder).forEach((e, i) => {
+    e.addEventListener("click", (el) => {
+        if(el.target == projectHolder[i]){
+        changeDisplay(projectHolder[i], "none")
+      }
+      else return;
+    })
+});
+
+
+Array.from(closeProjectHolder).forEach((e, i) => {
     e.addEventListener("click", () => {
         changeDisplay(projectHolder[i], "none")
     })
