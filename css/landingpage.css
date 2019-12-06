@@ -164,7 +164,7 @@ body{
     height: 100%;
     width: 100%;
     background: linear-gradient(to bottom right, var(--primary), var(--secondary));
-    opacity: .65;
+    opacity: .90;
 }
 
 .count-down-section .content {
