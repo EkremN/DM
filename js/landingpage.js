@@ -101,15 +101,15 @@ Array.from(closeProjectHolder).forEach((e, i) => {
     })
 });
 
-playVideo.addEventListener("click", () => {
-    changeDisplay(videoHolder, "flex")
-    video.play();
-})
+// playVideo.addEventListener("click", () => {
+//     changeDisplay(videoHolder, "flex")
+//     video.play();
+// })
 
-closeBtn.addEventListener("click", () => {
-    changeDisplay(videoHolder, "none")
-    video.load();
-})
+// closeBtn.addEventListener("click", () => {
+//     changeDisplay(videoHolder, "none")
+//     video.load();
+// })
 
 
 

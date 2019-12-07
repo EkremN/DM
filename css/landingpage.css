@@ -612,6 +612,10 @@ body{
     padding: 0;
   }
 
+  .inner-header h3 {
+    font-size: 30px;
+  }
+
   .flex { /*Flexbox for containers*/
     display: flex;
     justify-content: center;
@@ -997,6 +1001,17 @@ body{
 /* //RESPOSNIVE STUFF */
 
 @media screen and (max-width: 1200px) {
+      .section-title{
+        margin-left:20px;
+      }
+
+      .header-nav{
+        display: none;
+    }
+
+     .page-header .hamburger-menu{
+        display: block;
+    }
 
     .learn-with-the-best .cards-holder-grid {
         display: grid;
@@ -1016,10 +1031,6 @@ body{
 
 @media screen and (max-width: 900px) {
 
-    .header-nav{
-        display: none;
-    }
-
     .page-header{
         padding: 0 20px;
         height: 60px;
@@ -1027,10 +1038,6 @@ body{
 
     .page-header .logo{
         height: 40px;
-    }
-
-    .page-header .hamburger-menu{
-        display: block;
     }
 
     .funtenjer,
