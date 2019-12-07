@@ -137,7 +137,7 @@ body{
 }
 
 
-.header-nav>li:nth-last-of-type(2) {
+.header-nav>li:nth-last-of-type(3) {
     border-left: 2px solid #eaedf3;
     padding-left: 10px;
 }
