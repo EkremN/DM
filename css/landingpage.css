@@ -880,7 +880,7 @@ body{
 }
 
 .get-started-with .grid-layout .prices .price-container {
-    background: #fff;
+     background: rgb(255, 255, 255,.7);
     border-radius: 7px;
     padding: 20px 30px;
 }
@@ -888,9 +888,13 @@ body{
 
 /* //INTERACT WITH PRICES OFFRES */
 
-.get-started-with .grid-layout .prices .price-container:not(:first-child) {
-    background: rgb(255, 255, 255,.7);
+
+/*//.active-offer for active price*/
+.get-started-with .grid-layout .prices  .active-offer {
+   background: #fff;
 }
+
+
 
 .get-started-with .grid-layout .prices .price-container h6 {
     margin: 0;
